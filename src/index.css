@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.maintenancePage {
+	background-color: #41999e;
+	color: #ffffc7;
+	padding: 0 5px;
+	min-height: 100vh;
+	position: relative;
+	overflow-y: hidden;
+}
+
+.maintenancePage div {
+	text-align: center;
+	font-family: Impact !important;
+}
+
+.maintenancePage div a {
+	color: #ffff00;
+	text-decoration: underline;
+}
+
+.maintenancePage div h1 {
+	font-weight: 700;
+	font-size: 60px;
+}
+
+.maintenancePage div h2 {
+	font-weight: 800;
+	font-size: 22px;
+}
