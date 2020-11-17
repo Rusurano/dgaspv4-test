@@ -82,9 +82,10 @@ class App extends React.Component {
 		window.removeEventListener('scroll',this.handleScroll);
 	}
 
+	// Rusurano: no maintenanceMode
 	// I'm dropping a note here that all other components will take that sheets did successfully load for granted due to them being loaded only when the sheets are loaded.
   render() {
-		return this.state.sheetsLoaded ? this.state.maintenanceMode ? (
+		return this.state.sheetsLoaded ? /*this.state.maintenanceMode*/false ? (
 			<div>
 				<MaintenanceMode />
 			</div>

@@ -2,7 +2,7 @@
   "name": "gasp-v4",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://duosora.github.io/dgaspv4",
+  "homepage": "https://rusurano.github.io/dgaspv4-test",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
