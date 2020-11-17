@@ -144,7 +144,7 @@ class PinglistGen extends React.Component {
 		if(eligibleCount === 0) {
 			pinglistString = globalState.dynamicFields[7][0];
 		} else {
-			preparedKeywords = preparedKeywords.substring(0,preparedKeywords.length-keywordsDelimiter.length-keywordsSeparator.length);
+			preparedKeywords = preparedKeywords.substring(0,preparedKeywords.length-keywordsSeparator.length);
 
 			if(eligibleCount === 1) {
 				postLayout = globalState.dynamicFields[49][0];
