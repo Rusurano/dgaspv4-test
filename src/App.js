@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col } from 'reactstrap';
+import { Container, Row, Col, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 import Header from './Components/Header';
 import Rules from './Components/Rules';
 import SheetData from './Components/SheetData';
@@ -14,7 +14,8 @@ class App extends React.Component {
 	constructor(props) {
 		super(props);
 
-		this.state = { sheetsLoaded: false, maintenanceMode: false }
+		this.state = { sheetsLoaded: false, maintenanceMode: false,
+									 currentTheme: 'theme1', themeDropdownOpen: false }
 	}
 
 	inArray(whichArray,whichValue,deep=false) {
@@ -82,6 +83,16 @@ class App extends React.Component {
 		window.removeEventListener('scroll',this.handleScroll);
 	}
 
+	toggleThemeDropdown = () => {
+		const isOpen = !this.state.themeDropdownOpen;
+
+		this.setState({themeDropdownOpen: isOpen});
+	}
+
+	themeSelect = themeTag => {
+		this.setState({currentTheme: themeTag});
+	}
+
 	// Rusurano: no maintenanceMode
 	// I'm dropping a note here that all other components will take that sheets did successfully load for granted due to them being loaded only when the sheets are loaded.
   render() {
@@ -90,10 +101,27 @@ class App extends React.Component {
 				<MaintenanceMode />
 			</div>
 		) : (
-			<div className="App">
+			<div className={`App ${this.state.currentTheme}`}>
 				<Container fluid className="HeaderRow">
 					<Row>
-						<Col className="HeaderContent"><Header /></Col>
+						<Col className="HeaderContent">
+							<Header />
+							<Dropdown isOpen={this.state.themeDropdownOpen} toggle={this.toggleThemeDropdown}>
+				      <DropdownToggle caret>
+				        Select your theme!
+				     	</DropdownToggle>
+				      <DropdownMenu>
+				        <DropdownItem header>Active Themes</DropdownItem>
+				        <DropdownItem onClick={() => { this.themeSelect("theme1") }}>Hollow Theme</DropdownItem>
+				        <DropdownItem onClick={() => { this.themeSelect("theme2") }}>FR Theme</DropdownItem>
+				        <DropdownItem divider />
+				        <DropdownItem header>Future Themes</DropdownItem>
+								<DropdownItem disabled>Acacia</DropdownItem>
+								<DropdownItem disabled>Darkmode #1</DropdownItem>
+								<DropdownItem disabled>Darkmode #2</DropdownItem>
+				      </DropdownMenu>
+				    </Dropdown>
+						</Col>
 					</Row>
 				</Container>
 
