@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Oswald', sans-serif;
 	text-transform: uppercase;
   letter-spacing: 2px;
+  user-select: none;
 }
 
 code {
@@ -39,6 +40,27 @@ code {
 
 .App.theme2 {
   @import "theme2";
+  background-color: map-deep-get($app_general, "background");
+  color: map-deep-get($app_general, "text");
+  @import "core";
+}
+
+.App.theme3 {
+  @import "theme3";
+  background-color: map-deep-get($app_general, "background");
+  color: map-deep-get($app_general, "text");
+  @import "core";
+}
+
+.App.theme4 {
+  @import "theme4";
+  background-color: map-deep-get($app_general, "background");
+  color: map-deep-get($app_general, "text");
+  @import "core";
+}
+
+.App.theme5 {
+  @import "theme5";
   background-color: map-deep-get($app_general, "background");
   color: map-deep-get($app_general, "text");
   @import "core";

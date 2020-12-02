@@ -114,11 +114,9 @@ class App extends React.Component {
 				        <DropdownItem header>Active Themes</DropdownItem>
 				        <DropdownItem onClick={() => { this.themeSelect("theme1") }}>Hollow Theme</DropdownItem>
 				        <DropdownItem onClick={() => { this.themeSelect("theme2") }}>FR Theme</DropdownItem>
-				        <DropdownItem divider />
-				        <DropdownItem header>Future Themes</DropdownItem>
-								<DropdownItem disabled>Acacia</DropdownItem>
-								<DropdownItem disabled>Darkmode #1</DropdownItem>
-								<DropdownItem disabled>Darkmode #2</DropdownItem>
+								<DropdownItem onClick={() => { this.themeSelect("theme3") }}>Acacia Theme</DropdownItem>
+								<DropdownItem onClick={() => { this.themeSelect("theme4") }}>Darkmode #1</DropdownItem>
+								<DropdownItem onClick={() => { this.themeSelect("theme5") }}>Darkmode #2</DropdownItem>
 				      </DropdownMenu>
 				    </Dropdown>
 						</Col>

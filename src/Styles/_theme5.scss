@@ -14,6 +14,12 @@ $header: (
   )
 );
 
+$app_headings: (
+  "outline": #732222,
+  "shadow": rgba(0,0,0,0.34),
+  "text": #fff
+);
+
 $app_columns: (
   "background": (
     "gradient-bottom": #313131,
@@ -49,6 +55,9 @@ $search_keywords: (
 );
 
 $volumetric_button: (
+  "outline": transparent,
+  "shadow": transparent,
+
   "ordinary": (
     "background": (
       "gradient-bottom": #131313,
@@ -89,6 +98,9 @@ $volumetric_button: (
 );
 
 $generate_button: (
+  "outline": transparent,
+  "shadow": transparent,
+
   "ordinary": (
     "background": (
       "gradient-bottom": #131313,
@@ -129,6 +141,9 @@ $generate_button: (
 );
 
 $copy_button: (
+  "outline": transparent,
+  "shadow": transparent,
+
   "ordinary": (
     "background": (
       "gradient-bottom": #666666,
