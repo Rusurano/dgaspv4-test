@@ -15,7 +15,7 @@ class App extends React.Component {
 		super(props);
 
 		this.state = { sheetsLoaded: false, maintenanceMode: false,
-									 currentTheme: 'theme1', themeDropdownOpen: false }
+									 currentTheme: 'theme4', themeDropdownOpen: false }
 	}
 
 	inArray(whichArray,whichValue,deep=false) {
