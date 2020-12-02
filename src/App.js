@@ -70,17 +70,25 @@ class App extends React.Component {
 		}
 	}
 
+	defocusButtons = (e) => {
+		if(document.activeElement.toString() == '[object HTMLButtonElement]') {
+			document.activeElement.blur();
+		}
+	}
+
 	componentDidMount = () => {
 		this.checkLoading = this.checkLoading.bind(this);
 		this.goBackTop    = this.goBackTop.bind(this);
 
 		window.addEventListener('scroll', this.handleScroll, true);
+		document.addEventListener('click', this.defocusButtons, true);
 
 		this.checkLoading();
 	}
 
 	componentWillUnmount = () => {
 		window.removeEventListener('scroll',this.handleScroll);
+		document.removeEventListener('click', this.defocusButtons); 
 	}
 
 	toggleThemeDropdown = () => {

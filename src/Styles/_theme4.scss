@@ -15,9 +15,9 @@ $header: (
 );
 
 $app_headings: (
-  "outline": transparent,
+  "outline": #181b20,
   "shadow": transparent,
-  "text": #000
+  "text": #b5bdc9
 );
 
 $app_columns: (
@@ -64,7 +64,7 @@ $volumetric_button: (
       "gradient-top": #1d2127
     ),
     "text": #fff,
-    "box-shadow": #2b638f,
+    "box-shadow": #0a0c0e,
     "border": #0a0c0e
 
   ),
@@ -83,7 +83,7 @@ $volumetric_button: (
       "gradient-top": #272d35
     ),
     "text": #fff,
-    "box-shadow": #2b638f,
+    "box-shadow": #0a0c0e,
     "border": #0a0c0e
   ),
   "pressed": (
@@ -92,7 +92,7 @@ $volumetric_button: (
       "gradient-top": #191c21
     ),
     "text": #fff,
-    "box-shadow": #2b638f,
+    "box-shadow": #0a0c0e,
     "border": #0a0c0e
   )
 );
@@ -107,7 +107,7 @@ $generate_button: (
       "gradient-top": #1d2127
     ),
     "text": #fff,
-    "box-shadow": #2b638f,
+    "box-shadow": #0a0c0e,
     "border": #0a0c0e
 
   ),
@@ -126,7 +126,7 @@ $generate_button: (
       "gradient-top": #272d35
     ),
     "text": #fff,
-    "box-shadow": #2b638f,
+    "box-shadow": #0a0c0e,
     "border": #0a0c0e
   ),
   "pressed": (
@@ -135,7 +135,7 @@ $generate_button: (
       "gradient-top": #191c21
     ),
     "text": #fff,
-    "box-shadow": #2b638f,
+    "box-shadow": #0a0c0e,
     "border": #0a0c0e
   )
 );
@@ -191,6 +191,8 @@ $search_filter: (
 	"header": (
 		"background": #181b20,
 		"text": #e2e5ea,
+    "ineligible_color": #ff0000,
+    "eligible_color": #68d968,
 
 		"option_buttons": (
 			"ordinary": (

@@ -125,11 +125,6 @@ class PinglistGen extends React.Component {
 		const keywordsSeparator = globalState.dynamicFields[4][0];
 		let pinglistString = '';
 		let preparedKeywords = '';
-		const eventTarget = e.target;
-
-		setTimeout(() => {
-			eventTarget.blur();
-		},380);
 
 		this.state.pinglistGenerators.forEach((item, index) => {
 			if(item.eligible) {

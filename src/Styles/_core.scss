@@ -666,11 +666,11 @@ a:hover {
 }
 
 .iconEligible {
-  color: #68d968;
+  color: map-deep-get($search_filter, "header", "eligible_color");
 }
 
 .iconIneligible {
-  color: #ff0000;
+  color: map-deep-get($search_filter, "header", "ineligible_color");
 }
 
 .iconExpanded {
