@@ -116,13 +116,13 @@ class App extends React.Component {
 							<Header />
 							<Dropdown isOpen={this.state.themeDropdownOpen} toggle={this.toggleThemeDropdown}>
 				      <DropdownToggle caret>
-				        Select your theme!
+				        { globalState.dynamicFields[53][0] }
 				     	</DropdownToggle>
 				      <DropdownMenu>
-				        <DropdownItem header>Active Themes</DropdownItem>
-				        <DropdownItem onClick={() => { this.themeSelect("theme1") }}>Hollow Theme</DropdownItem>
-								<DropdownItem onClick={() => { this.themeSelect("theme3") }}>Acacia Theme</DropdownItem>
-								<DropdownItem onClick={() => { this.themeSelect("theme4") }}>Dark Mode</DropdownItem>
+				        <DropdownItem header>{ globalState.dynamicFields[54][0] }</DropdownItem>
+				        <DropdownItem onClick={() => { this.themeSelect("theme1") }}>{ globalState.dynamicFields[55][0] }</DropdownItem>
+								<DropdownItem onClick={() => { this.themeSelect("theme3") }}>{ globalState.dynamicFields[56][0] }</DropdownItem>
+								<DropdownItem onClick={() => { this.themeSelect("theme4") }}>{ globalState.dynamicFields[57][0] }</DropdownItem>
 								{ /*
 										Rest in peace, valiant themes...
 										<DropdownItem onClick={() => { this.themeSelect("theme2") }}>FR Theme</DropdownItem>

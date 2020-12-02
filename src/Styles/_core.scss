@@ -425,7 +425,7 @@ a:active {
 
 .ReadyPinglistServeContainer {
 	background-color: map-deep-get($pinglist_textarea, "background") !important;
-	color: map-deep-get($pinglist_textarea, "text");
+	color: map-deep-get($pinglist_textarea, "text") !important;
 	font-size: 7pt;
 	min-height: 200px;
 	max-height: 200px;
@@ -610,8 +610,8 @@ a:active {
 }
 
 .form-control {
-  background-color: map-deep-get($search_filter, "content", "selectors", "background") !important;
-  color: map-deep-get($search_filter, "content", "selectors", "text") !important;
+  background-color: map-deep-get($search_filter, "content", "selectors", "background");
+  color: map-deep-get($search_filter, "content", "selectors", "text");
 }
 
 .pinglistSelectors .form-control:focus {

@@ -422,8 +422,6 @@ class PinglistGen extends React.Component {
 						this.constructPinglistFilter(item,index)
 				))}
 
-				<hr/>
-
 				<span dangerouslySetInnerHTML={{ __html: this.generatorCount === 0 ? globalState.dynamicFields[13][0] : (this.state.pinglistGenerators.length === 0 ? globalState.dynamicFields[14][0] : globalState.dynamicFields[15][0])}}></span>
 
 				<br/>
