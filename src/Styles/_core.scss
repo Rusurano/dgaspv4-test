@@ -1,9 +1,17 @@
-a:link, a:visited, a:active {
-  color: #2a223a;
+a:link {
+  color: map-deep-get($app_general, "link", "usual");
+}
+
+a:visited {
+  color: map-deep-get($app_general, "link", "visited");
 }
 
 a:hover {
-  color: #403954;
+  color: map-deep-get($app_general, "link", "hover");
+}
+
+a:active {
+  color: map-deep-get($app_general, "link", "pressed");
 }
 
 .keywordContainer Button {
@@ -149,9 +157,9 @@ a:hover {
   background-image: -webkit-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
   background-image: -ms-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, $bottom_color),color-stop(1, $top_color));
-  -webkit-box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-	-moz-box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-	box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+	-moz-box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+	box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
 
   &:disabled {
     background-color: map-deep-get($volumetric_button, "disabled", "background", "gradient-top") !important;
@@ -181,9 +189,9 @@ a:hover {
     background-image: -ms-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, $bottom_color),color-stop(1, $top_color));
 
-    -webkit-box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-  	-moz-box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-  	box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+  	-moz-box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+  	box-shadow: 0px 6px 0px map-deep-get($volumetric_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
   }
 
   &:active:enabled {
@@ -199,9 +207,9 @@ a:hover {
     background-image: -webkit-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
     background-image: -ms-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, $bottom_color),color-stop(1, $top_color));
-    -webkit-box-shadow: 0px 2px 0px map-deep-get($volumetric_button, "pressed", "box-shadow"), 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5) !important;
-    -moz-box-shadow: 0px 2px 0px map-deep-get($volumetric_button, "pressed", "box-shadow"), 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5) !important;
-    box-shadow: 0px 2px 0px map-deep-get($volumetric_button, "pressed", "box-shadow"), 0px 1px 6px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5) !important;
+    -webkit-box-shadow: 0px 2px 0px map-deep-get($volumetric_button, "pressed", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25) !important;
+    -moz-box-shadow: 0px 2px 0px map-deep-get($volumetric_button, "pressed", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25) !important;
+    box-shadow: 0px 2px 0px map-deep-get($volumetric_button, "pressed", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25) !important;
   }
 
   &:focus:enabled {
@@ -222,9 +230,9 @@ a:hover {
   background-image: -webkit-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
   background-image: -ms-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, $bottom_color),color-stop(1, $top_color));
-  -webkit-box-shadow: 0px 6px 0px map-deep-get($generate_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-	-moz-box-shadow: 0px 6px 0px map-deep-get($generate_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-	box-shadow: 0px 6px 0px map-deep-get($generate_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0px 6px 0px map-deep-get($generate_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+	-moz-box-shadow: 0px 6px 0px map-deep-get($generate_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+	box-shadow: 0px 6px 0px map-deep-get($generate_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
 
   &:disabled {
     background-color: map-deep-get($generate_button, "disabled", "background", "gradient-top") !important;
@@ -254,9 +262,9 @@ a:hover {
     background-image: -ms-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, $bottom_color),color-stop(1, $top_color));
 
-    -webkit-box-shadow: 0px 6px 0px map-deep-get($generate_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-  	-moz-box-shadow: 0px 6px 0px map-deep-get($generate_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-  	box-shadow: 0px 6px 0px map-deep-get($generate_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0px 6px 0px map-deep-get($generate_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+  	-moz-box-shadow: 0px 6px 0px map-deep-get($generate_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+  	box-shadow: 0px 6px 0px map-deep-get($generate_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
   }
 
   &:active:enabled {
@@ -295,9 +303,9 @@ a:hover {
   background-image: -webkit-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
   background-image: -ms-linear-gradient(to top, $bottom_color 0%, $top_color 100%);
   background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, $bottom_color),color-stop(1, $top_color));
-  -webkit-box-shadow: 0px 6px 0px map-deep-get($copy_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-	-moz-box-shadow: 0px 6px 0px map-deep-get($copy_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-	box-shadow: 0px 6px 0px map-deep-get($copy_button, "ordinary", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+  -webkit-box-shadow: 0px 6px 0px map-deep-get($copy_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+	-moz-box-shadow: 0px 6px 0px map-deep-get($copy_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+	box-shadow: 0px 6px 0px map-deep-get($copy_button, "ordinary", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
 
   &:hover:enabled {
     $bottom_color: map-deep-get($copy_button, "hover", "background", "gradient-bottom");
@@ -314,9 +322,9 @@ a:hover {
     background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0, $bottom_color),color-stop(1, $top_color));
     border: 1px solid map-deep-get($copy_button, "hover", "border") !important;
 
-    -webkit-box-shadow: 0px 6px 0px map-deep-get($copy_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-  	-moz-box-shadow: 0px 6px 0px map-deep-get($copy_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
-  	box-shadow: 0px 6px 0px map-deep-get($copy_button, "hover", "box-shadow"), 0px 3px 15px rgba(0,0,0,.4), inset 0px 1px 0px rgba(255,255,255,.3), inset 0px 0px 3px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0px 6px 0px map-deep-get($copy_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+  	-moz-box-shadow: 0px 6px 0px map-deep-get($copy_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
+  	box-shadow: 0px 6px 0px map-deep-get($copy_button, "hover", "box-shadow"), -1px 10px 5px rgba(0,0,0,.3), inset 0px 1px 0px rgba(255,255,255,.25);
   }
 
   &:active:enabled {
@@ -348,8 +356,7 @@ a:hover {
 .GenerateButton,
 .CopyButton {
   text-decoration: none;
-  font-weight: bold;
-	font-family: Roboto, sans-serif;
+  font-family: Roboto, sans-serif;
 	display: inline-block;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -357,7 +364,6 @@ a:hover {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	font-weight: bolder !important;
 	text-shadow: 1px  1px 1px rgba(0,0,0,.5);
   -webkit-transition: all .1s ease-in-out;
 	-moz-transition: all .2s ease-in-out;

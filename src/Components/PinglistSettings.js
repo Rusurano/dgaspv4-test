@@ -134,6 +134,7 @@ class PinglistSettings extends React.Component {
 									</option>
 									<option value="Yes">Yes</option>
 									<option value="No">No</option>
+									<option value="help1" disabled>{ globalState.dynamicFields[50][0] }</option>
 								</Input>
 							</InputGroup>
 						</Col>

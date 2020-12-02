@@ -34,3 +34,11 @@
 .popover, .popover-body {
 	pointer-events: none;
 }
+
+b {
+	font-weight: 500;
+}
+
+strong {
+	font-weight: 800;
+}

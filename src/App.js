@@ -88,7 +88,7 @@ class App extends React.Component {
 
 	componentWillUnmount = () => {
 		window.removeEventListener('scroll',this.handleScroll);
-		document.removeEventListener('click', this.defocusButtons); 
+		document.removeEventListener('click', this.defocusButtons);
 	}
 
 	toggleThemeDropdown = () => {
@@ -149,7 +149,7 @@ class App extends React.Component {
 				<Container fluid className="FooterRow">
 					<Row>
 						<Col>
-							<span dangerouslySetInnerHTML={{ __html: globalState.dynamicFields[32][0]}}></span> Coding by <strong>Duosora</strong>.
+							<span dangerouslySetInnerHTML={{ __html: globalState.dynamicFields[32][0]}}></span> Coding by <b>Duosora</b>.
 						</Col>
 					</Row>
 

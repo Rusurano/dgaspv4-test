@@ -1,6 +1,12 @@
 $app_general: (
   "text": #dfe2e7,
-  "background": #20242b
+  "background": #20242b,
+  "link": (
+    "usual": #7d8b9f,
+    "visited": #7d8b9f,
+    "pressed": #647388,
+    "hover": #647388
+  )
 );
 
 $header: (
@@ -63,7 +69,7 @@ $volumetric_button: (
       "gradient-bottom": #111317,
       "gradient-top": #1d2127
     ),
-    "text": #fff,
+    "text": #919dad,
     "box-shadow": #0a0c0e,
     "border": #0a0c0e
 
@@ -82,7 +88,7 @@ $volumetric_button: (
       "gradient-bottom": #171a1f,
       "gradient-top": #272d35
     ),
-    "text": #fff,
+    "text": #919dad,
     "box-shadow": #0a0c0e,
     "border": #0a0c0e
   ),
@@ -91,7 +97,7 @@ $volumetric_button: (
       "gradient-bottom": #0e1114,
       "gradient-top": #191c21
     ),
-    "text": #fff,
+    "text": #919dad,
     "box-shadow": #0a0c0e,
     "border": #0a0c0e
   )
@@ -106,7 +112,7 @@ $generate_button: (
       "gradient-bottom": #111317,
       "gradient-top": #1d2127
     ),
-    "text": #fff,
+    "text": #919dad,
     "box-shadow": #0a0c0e,
     "border": #0a0c0e
 
@@ -125,7 +131,7 @@ $generate_button: (
       "gradient-bottom": #171a1f,
       "gradient-top": #272d35
     ),
-    "text": #fff,
+    "text": #919dad,
     "box-shadow": #0a0c0e,
     "border": #0a0c0e
   ),
@@ -134,7 +140,7 @@ $generate_button: (
       "gradient-bottom": #0e1114,
       "gradient-top": #191c21
     ),
-    "text": #fff,
+    "text": #919dad,
     "box-shadow": #0a0c0e,
     "border": #0a0c0e
   )
@@ -149,7 +155,7 @@ $copy_button: (
       "gradient-bottom": #5a677a,
       "gradient-top": #95a1b1
     ),
-    "text": #fff,
+    "text": #111417,
     "box-shadow": #111417,
     "border": #111417
   ),
@@ -167,7 +173,7 @@ $copy_button: (
       "gradient-bottom": #515d6d,
       "gradient-top": #8a97a8
     ),
-    "text": #fff,
+    "text": #111417,
     "box-shadow": #111417,
     "border": #111417
   ),
@@ -176,7 +182,7 @@ $copy_button: (
       "gradient-bottom": #39414d,
       "gradient-top": #576476
     ),
-    "text": #fff,
+    "text": #111417,
     "box-shadow": #111417,
     "border": #111417
   )
