@@ -71,7 +71,7 @@ class App extends React.Component {
 	}
 
 	defocusButtons = (e) => {
-		if(document.activeElement.toString() == '[object HTMLButtonElement]') {
+		if(document.activeElement.toString() === '[object HTMLButtonElement]') {
 			document.activeElement.blur();
 		}
 	}
