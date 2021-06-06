@@ -1,22 +1,20 @@
-import React from 'react';
-import { globalState } from './GlobalState';
+import React, { useContext } from 'react';
+import { DynamicField } from './Helpers';
+import { SheetContext } from './contexts/SheetContext';
 
 const Rules = () => {
+  const sheetData = useContext(SheetContext);
+
 	const printRule = (item,index) => {
 		let	ruleText = item[1];
 		
 		if(ruleText !== undefined) {
-			if(ruleText.startsWith('-')) {
-				ruleText = "<br/>";
-			}
+			if(ruleText.startsWith('-')) ruleText = "<br/>";
+
 			if(item[0].startsWith('gasp_')) {			
-				if(ruleText.startsWith('• ')) {
-					ruleText = "<li>"+ruleText.substring(2)+"</li>";
-				}
+				if(ruleText.startsWith('• ')) ruleText = "<li>"+ruleText.substring(2)+"</li>";
 				
-				return (ruleText !== "-<br/>") ? (
-					<span key={index} className="rulePosition" dangerouslySetInnerHTML={{ __html: ruleText}}></span>
-				) : <span key={index}></span>;
+				return ruleText !== "-<br/>" ? <DynamicField key={index} className="rulePosition" content={ruleText} /> : <span key={index}></span>;
 			}
 		}
 		
@@ -25,7 +23,7 @@ const Rules = () => {
 	
 	return (
 		<ul>
-			{ globalState.rulesData.map((item,index) => printRule(item,index)) }
+			{ sheetData.sheets[2].content.map((item,index) => printRule(item,index)) }
 		</ul>
 	)
 }
