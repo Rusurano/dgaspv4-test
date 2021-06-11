@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/dgaspv4-test/static/css/main.b7334346.chunk.css",
-    "main.js": "/dgaspv4-test/static/js/main.fc71bfe1.chunk.js",
-    "main.js.map": "/dgaspv4-test/static/js/main.fc71bfe1.chunk.js.map",
+    "main.js": "/dgaspv4-test/static/js/main.0e2bba77.chunk.js",
+    "main.js.map": "/dgaspv4-test/static/js/main.0e2bba77.chunk.js.map",
     "runtime-main.js": "/dgaspv4-test/static/js/runtime-main.a94e93d2.js",
     "runtime-main.js.map": "/dgaspv4-test/static/js/runtime-main.a94e93d2.js.map",
     "static/css/2.61b4cb56.chunk.css": "/dgaspv4-test/static/css/2.61b4cb56.chunk.css",
@@ -18,6 +18,6 @@
     "static/css/2.61b4cb56.chunk.css",
     "static/js/2.026d9922.chunk.js",
     "static/css/main.b7334346.chunk.css",
-    "static/js/main.fc71bfe1.chunk.js"
+    "static/js/main.0e2bba77.chunk.js"
   ]
 }
